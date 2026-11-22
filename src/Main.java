@@ -6,16 +6,17 @@ public class Main{
 
 		boolean running = true;
 		while(running){
-			System.out.println(" Press 1 to start a new game and press 2 to exit.");
-			int action = sc.nextInt();
-			if (action==1) {
+			System.out.println("Press 1 to start a new game and press 2 to exit.");
+			String action = sc.nextLine();
+			if (action.equals("1")) {
 				// game code
+				System.out.println("The game is about to start...");
 			}
-			else if (action == 2) {
+			else if (action.equals("2")) {
 				running = false;
 			}
 			else {
-				System.out.println("Unknown action, please enter 1 or 2.");
+				System.out.println("Unknown action, please enter '1' or '2'.");
 			}
 		}
 	}
